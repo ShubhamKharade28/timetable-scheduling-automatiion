@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  @apply w-full border-collapse text-lg text-center
+}
+
+th, td {
+  @apply p-2 border;
+}
