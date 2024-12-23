@@ -6,21 +6,17 @@ import fs from 'fs/promises';
 export async function POST(req){
     try {
         const body = await req.json();
-        const courseData = body.courseData;
+        const facultyData = body.facultyData;
 
-        if(!Array.isArray(courseData) || courseData.length === 0){
+        if(!Array.isArray(facultyData) || facultyData.length === 0){
             return NextResponse.json({ message: 'Invalid course data' }, { status: 400 });
         }
 
-        console.log('Received course data', courseData);
+        console.log('Received faculty data', facultyData);
 
-        // partition the course data into lectures, labs, and tutorials
-        const partionedCourseData = partitionCourses(courseData);
-        console.log('partitioned data', partionedCourseData);
-
-        const filePath = "./src/data/courses.json";
-        await fs.writeFile(filePath, JSON.stringify(partionedCourseData, null, 4));
-        console.log("Partitioned course data saved to 'data/courses.json'");
+        const filePath = "./src/data/faculties.json";
+        await fs.writeFile(filePath, JSON.stringify(facultyData, null, 4));
+        console.log("Faculty data saved to 'data/faculties.json'");
 
         return NextResponse.json({message: 'Course data received successfully'}, {status: 200});
     }

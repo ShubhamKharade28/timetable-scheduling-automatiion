@@ -24,6 +24,17 @@ const FacultyDataInput = ({faculties, setFaculties, courses}) => {
         setFacultyName('');
     }
 
+    function addCourseWithValidation(course){
+        const courseExists = prefCourses.some(existingCourse => existingCourse.code === course.code);
+
+        if(courseExists){
+            const message = "Course code " + course.code + " already added!";
+            alert(message);
+        } else {
+            setPrefCourses(prev => [...prev, course]);
+        }
+    }
+
     const addPrefCourse = () => {
         if(!courseCode) {
             alert('Please enter course code');
@@ -35,7 +46,7 @@ const FacultyDataInput = ({faculties, setFaculties, courses}) => {
             // match for lab and lecture
             if(code === courseCode){
                 courseFound = true;
-                setPrefCourses(prev => [...prev, course]);
+                addCourseWithValidation(course)
             }
 
             // match for tutorial
@@ -44,7 +55,7 @@ const FacultyDataInput = ({faculties, setFaculties, courses}) => {
                 tutCode = tutCode.replace('(P)', '(T)');
                 if(code == tutCode){
                     courseFound = true;
-                    setPrefCourses(prev => [...prev, {sem: course.sem, code: course.code}]);
+                    addCourseWithValidation({...course,sem: course.sem, code: course.code});
                 }
             }
         });
