@@ -1,4 +1,3 @@
-import { courseTypes } from "@/utils/courses";
 import toRoman from "@/utils/toroman";
 
 const CourseListContainer = ({courses}) => {

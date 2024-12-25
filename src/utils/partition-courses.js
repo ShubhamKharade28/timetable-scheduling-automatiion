@@ -5,6 +5,7 @@ export default function partitionCourses(coursesCombined){
     coursesCombined.forEach(course => {
         const lectureCourse = {
             sem: course.sem,
+            partOfElective: course.partOfElective,
             courseName: course.courseName,
             code: course.code,
             type: courseTypes.lecture,
@@ -16,6 +17,7 @@ export default function partitionCourses(coursesCombined){
         if(course.labs > 0){
             const labCourse = {
                 sem: course.sem,
+                partOfElective: course.partOfElective,
                 courseName: course.courseName + " Lab",
                 code: course.code + " (P)",
                 type: courseTypes.lab,
@@ -28,6 +30,7 @@ export default function partitionCourses(coursesCombined){
         if(course.tutorials > 0){
             const tutorialCourse = {
                 sem: course.sem,
+                partOfElective: course.partOfElective,
                 courseName: course.courseName + " Tutorial",
                 code: course.code + " (T)",
                 type: courseTypes.tutorial,

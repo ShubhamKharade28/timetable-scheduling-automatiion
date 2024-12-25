@@ -2,6 +2,7 @@
 import partitionCourses from "@/utils/partition-courses";
 import { NextResponse } from "next/server";
 import fs from 'fs/promises';
+import partitionBatches from "@/utils/partition-batches";
 
 export async function POST(req){
     try {
@@ -18,8 +19,11 @@ export async function POST(req){
         const partionedCourseData = partitionCourses(courseData);
         console.log('partitioned data', partionedCourseData);
 
+        const batchPartitionedCourseData = partitionBatches(partionedCourseData);
+        console.log('Batch partitioned course data', batchPartitionedCourseData);
+
         const filePath = "./src/data/courses.json";
-        await fs.writeFile(filePath, JSON.stringify(partionedCourseData, null, 4));
+        await fs.writeFile(filePath, JSON.stringify(batchPartitionedCourseData, null, 4));
         console.log("Partitioned course data saved to 'data/courses.json'");
 
         return NextResponse.json({message: 'Course data received successfully'}, {status: 200});
