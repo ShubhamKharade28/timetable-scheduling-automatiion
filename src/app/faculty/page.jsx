@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { courseTypes } from "@/utils/courses";
+import { courseTypes } from "@/utils/course-utils";
 import CourseListContainer from "../components/CourseListContainer";
 import FacultyDataInput from "../components/FacultyDataInput";
 import FacultyDataContainer from "../components/FacultyDataContainer";

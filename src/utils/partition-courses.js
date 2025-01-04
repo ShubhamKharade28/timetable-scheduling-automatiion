@@ -1,4 +1,4 @@
-import { courseTypes } from "./courses";
+import { courseTypes } from "./course-utils";
 
 export default function partitionCourses(coursesCombined){
     let coursesPartitioned = [];
