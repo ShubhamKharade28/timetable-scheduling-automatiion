@@ -1,12 +1,18 @@
 
 import toRoman from "@/utils/toroman";
+import partitionCourses from "@/utils/partition-courses";
+import partitionBatches from "@/utils/partition-batches";
 
 const CourseDataContainer = ({courses, removeCourse}) => {
     const submitCourseData = async (e) => {
         e.preventDefault();
 
+        // partition the course data into lectures, labs, and tutorials
+        const partionedCourseData = partitionCourses(courses);
+        const batchPartitionedCourseData = partitionBatches(partionedCourseData);
+
         const requestBody = JSON.stringify({
-            courseData: courses
+            courseData: batchPartitionedCourseData,
         });
 
         const res = await fetch('/api/submit-courses', {
