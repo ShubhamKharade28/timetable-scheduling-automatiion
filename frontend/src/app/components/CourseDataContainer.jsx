@@ -15,7 +15,7 @@ const CourseDataContainer = ({courses, removeCourse}) => {
             courseData: batchPartitionedCourseData,
         });
 
-        const res = await fetch('/api/submit-courses', {
+        const res = await fetch('http://localhost:8000/courses/submit/', {
             body: requestBody,
             method: 'POST',
             headers: {'Content-Type': 'application/json'}
