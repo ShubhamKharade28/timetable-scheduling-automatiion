@@ -1,0 +1,132 @@
+{
+    "courseData": [
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Data Structures and Algorithms",
+            "code": "DSA",
+            "type": "lecture",
+            "value": 3
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Data Structures and Algorithms Lab - A",
+            "code": "DSA (P)-A",
+            "type": "lab",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Data Structures and Algorithms Lab - B",
+            "code": "DSA (P)-B",
+            "type": "lab",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Data Structures and Algorithms Lab - C",
+            "code": "DSA (P)-C",
+            "type": "lab",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Data Structures and Algorithms Tutorial - A",
+            "code": "DSA (T)-A",
+            "type": "tutorial",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Data Structures and Algorithms Tutorial - B",
+            "code": "DSA (T)-B",
+            "type": "tutorial",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Data Structures and Algorithms Tutorial - C",
+            "code": "DSA (T)-C",
+            "type": "tutorial",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Discrete Mathematics",
+            "code": "DM",
+            "type": "lecture",
+            "value": 2
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Discrete Mathematics Tutorial - A",
+            "code": "DM (T)-A",
+            "type": "tutorial",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Discrete Mathematics Tutorial - B",
+            "code": "DM (T)-B",
+            "type": "tutorial",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Discrete Mathematics Tutorial - C",
+            "code": "DM (T)-C",
+            "type": "tutorial",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Software Engineering",
+            "code": "SE",
+            "type": "lecture",
+            "value": 3
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Software Engineering Lab - A",
+            "code": "SE (P)-A",
+            "type": "lab",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Software Engineering Lab - B",
+            "code": "SE (P)-B",
+            "type": "lab",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Software Engineering Lab - C",
+            "code": "SE (P)-C",
+            "type": "lab",
+            "value": 1
+        },
+        {
+            "sem": "3",
+            "partOfElective": "",
+            "courseName": "Software Engineering Lab - D",
+            "code": "SE (P)-D",
+            "type": "lab",
+            "value": 1
+        }
+    ]
+}

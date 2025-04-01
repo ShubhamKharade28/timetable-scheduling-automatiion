@@ -2,6 +2,7 @@
 import toRoman from "@/utils/toroman";
 import partitionCourses from "@/utils/partition-courses";
 import partitionBatches from "@/utils/partition-batches";
+import { API_URL } from "../api/constants";
 
 const CourseDataContainer = ({courses, removeCourse}) => {
     const submitCourseData = async (e) => {
@@ -15,7 +16,7 @@ const CourseDataContainer = ({courses, removeCourse}) => {
             courseData: batchPartitionedCourseData,
         });
 
-        const res = await fetch('http://localhost:8000/courses/submit/', {
+        const res = await fetch(API_URL + 'courses/submit/', {
             body: requestBody,
             method: 'POST',
             headers: {'Content-Type': 'application/json'}

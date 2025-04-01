@@ -1,5 +1,7 @@
 
 import toRoman from "@/utils/toroman";
+import { API_URL } from "../api/constants";
+import Link from "next/link";
 
 const FacultyDataContainer = ({faculties, setFaculties}) => {
     const submitCourseData = async (e) => {
@@ -9,7 +11,7 @@ const FacultyDataContainer = ({faculties, setFaculties}) => {
             facultyData: faculties,
         });
 
-        const response = await fetch('/api/submit-faculty', {
+        const response = await fetch(API_URL + 'faculty/submit/', {
             method: 'POST',
             body: requestBody,
             headers: {'Content-Type': 'application/json'}
@@ -27,10 +29,16 @@ const FacultyDataContainer = ({faculties, setFaculties}) => {
         <div className="w-1/2 flex flex-col gap-5 h-screen overflow-scroll">
             <span className="w-full flex items-end justify-between">
                 <h4 className="text-3xl font-bold">Faculties</h4>
-                <button 
-                    onClick={submitCourseData}
-                    className="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded-lg text-sm font-bold w-fit"
-                >Submit Faculty Data</button>
+                <span className="flex gap-2">
+                    <Link
+                        href="http://localhost:8000/workload/"
+                        className="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded-lg text-sm font-bold w-fit"
+                    >Get workload distribution</Link>
+                    <button 
+                        onClick={submitCourseData}
+                        className="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded-lg text-sm font-bold w-fit"
+                    >Submit Faculty Data</button>
+                </span>
             </span>
             <table>
                 <thead>
