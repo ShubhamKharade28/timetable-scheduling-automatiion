@@ -22,7 +22,7 @@ def distribute_workload(courses, faculties, num_generations=100, num_individuals
             new_population.append(mutate(offspring2, faculties, courses, mutation_rate))
         
         # Replace the old population with the new one
-        population = replacement(population, new_population, fitness_values)
+        population = replacement(population, new_population, fitness_values, faculties, courses)
         
         # Optional: Print the best fitness value of this generation
         best_fitness = max(fitness_values)

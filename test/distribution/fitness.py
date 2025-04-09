@@ -1,30 +1,26 @@
-from facultydata import faculties
-from coursedata import courses
-
-def calculate_max_sessions(faculty_rank):
-    # Define the ratios
-    rank_ratios = {1: 4, 2: 5, 3: 6, 4: 7}
-
-    # Calculate total available sessions considering batches
-    total_sessions = sum(
-        course["sessionsPerWeek"] * (len(course["batches"]) if course["batches"] else 1) 
-        for course in courses
-    )
-    
-    # Calculate total weight based on present ranks
-    total_weight = sum(rank_ratios[faculty['rank']] for faculty in faculties)
-
-    # Assign session limits based on weighted proportion
-    max_sessions = {
-        faculty['facultyId']: round((rank_ratios[faculty['rank']] / total_weight) * total_sessions)
-        for faculty in faculties
-    }
-
-    return max_sessions  # Dictionary mapping facultyId to max sessions
-    
-
 
 def fitness(individual, faculties, courses):
+    def calculate_max_sessions(faculty_rank):
+        # Define the ratios
+        rank_ratios = {1: 4, 2: 5, 3: 6, 4: 7}
+
+        # Calculate total available sessions considering batches
+        total_sessions = sum(
+            course["sessionsPerWeek"] * (len(course["batches"]) if course["batches"] else 1) 
+            for course in courses
+        )
+        
+        # Calculate total weight based on present ranks
+        total_weight = sum(rank_ratios[faculty['rank']] for faculty in faculties)
+
+        # Assign session limits based on weighted proportion
+        max_sessions = {
+            faculty['facultyId']: round((rank_ratios[faculty['rank']] / total_weight) * total_sessions)
+            for faculty in faculties
+        }
+
+        return max_sessions  # Dictionary mapping facultyId to max sessions
+
     fitness_score = 0
     for faculty in faculties:
         total_sessions = sum(course['sessionsPerWeek']*len(course['batches']) for course in individual[faculty['facultyId']])
