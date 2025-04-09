@@ -6,10 +6,13 @@ def mutate(individual, faculties, courses, mutation_rate=0.1):
         course_to_mutate = random.choice(courses)
         course_id = course_to_mutate['courseId']
         current_faculty = next(
-            faculty for faculty in faculties 
-            if course_id in [c['courseId'] for c in individual[faculty['facultyId']]]
+            (faculty for faculty in faculties 
+            if course_id in [c['courseId'] for c in individual[faculty['facultyId']]]),
+            None
         )
 
+        if current_faculty is None:
+            return individual
         
         # Randomly assign to a new faculty
         new_faculty = random.choice(faculties)

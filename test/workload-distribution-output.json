@@ -1,0 +1,45 @@
+{
+    "Dr. A Sharma": [
+        "Cloud Computing",
+        "Data Structures Lab",
+        "DBMS Lab",
+        "Database Management System",
+        "Data Structures & Algorithms"
+    ],
+    "Prof. B Verma": [
+        "Operating Systems",
+        "OS Lab",
+        "OOP Lab",
+        "Object-Oriented Programming",
+        "Big Data Analytics"
+    ],
+    "Dr. C Patil": [
+        "Network Security",
+        "Deep Learning",
+        "Computer Networks",
+        "Natural Language Processing",
+        "Computer Organization",
+        "Discrete Mathematics"
+    ],
+    "Prof. D Singh": [
+        "Digital Logic Design",
+        "Software Engineering",
+        "Cyber Security",
+        "Reinforcement Learning",
+        "Machine Learning",
+        "DevOps"
+    ],
+    "Dr. E Joshi": [
+        "Artificial Intelligence",
+        "DevOps",
+        "Software Testing",
+        "Internet of Things"
+    ],
+    "Prof. F Desai": [
+        "Natural Language Processing",
+        "Deep Learning",
+        "Edge Computing",
+        "Software Testing",
+        "DevOps"
+    ]
+}

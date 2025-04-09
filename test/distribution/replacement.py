@@ -1,14 +1,19 @@
-from fitness import fitness
+from .fitness import fitness
 
-def replacement(population, offspring, fitness_values, faculties, courses):
+def replacement(population, offspring, fitness_values, faculties, courses, target_population_size):
     # Recalculate fitness for offspring
     offspring_fitness = [fitness(ind, faculties, courses) for ind in offspring]
+    
+    # Combine population and offspring
+    combined = population + offspring
+    combined_fitness = fitness_values + offspring_fitness
 
-    # Sort population and offspring by their fitness
-    sorted_population = [x for _, x in sorted(zip(fitness_values, population), reverse=True)]
-    sorted_offspring = [x for _, x in sorted(zip(offspring_fitness, offspring), reverse=True)]
- 
-    # Replace the least fit individuals in the population
-    sorted_population[-len(offspring):] = sorted_offspring
+    # Sort combined list by fitness descending
+    sorted_combined = [x for _, x in sorted(
+        zip(combined_fitness, combined),
+        key=lambda pair: pair[0],  # Sort by fitness value only
+        reverse=True
+    )]
 
-    return sorted_population
+    # Return top individuals up to the target population size
+    return sorted_combined[:target_population_size]

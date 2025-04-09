@@ -1,6 +1,6 @@
 
 def fitness(individual, faculties, courses):
-    def calculate_max_sessions(faculty_rank):
+    def calculate_max_sessions():
         # Define the ratios
         rank_ratios = {1: 4, 2: 5, 3: 6, 4: 7}
 
@@ -20,13 +20,15 @@ def fitness(individual, faculties, courses):
         }
 
         return max_sessions  # Dictionary mapping facultyId to max sessions
+    
+    max_sessions = calculate_max_sessions()
 
     fitness_score = 0
     for faculty in faculties:
         total_sessions = sum(course['sessionsPerWeek']*len(course['batches']) for course in individual[faculty['facultyId']])
         # Penalty for exceeding workload
-        if total_sessions > calculate_max_sessions(faculty['rank']):
-            fitness_score -= (total_sessions - calculate_max_sessions(faculty['rank'])) * 2  # Heavier penalty
+        if total_sessions > max_sessions[faculty['facultyId']]:
+            fitness_score -= (total_sessions - max_sessions[faculty['facultyId']]) * 2  # Heavier penalty
         
         # Reward for faculty preference
         preferred_courses = set(faculty['preferredCourses'])
