@@ -1,35 +1,10 @@
 from distribution.distribution import distribute_workload
-from coursedata import courses
-from facultydata import faculties
 
-def save_to_json(data, filename="output.json"):
-    import json
+from data.coursedata import courses
+from data.facultydata import faculties
 
-    with open(filename, "w") as f:
-        json.dump(data, f, indent=4)
-
-
-def clean_faculty_courses(data, faculty_info):
-    from collections import defaultdict
-
-    clean_data = defaultdict(list)
-
-    for faculty_id, courses in data.items():
-        faculty_name = faculty_info.get(faculty_id)
-        if not faculty_name:
-            continue  # Skip if faculty_id not found
-
-        for course in courses:
-            if not isinstance(course, dict):
-                continue
-            if 'courseName' not in course:
-                continue
-
-            course_name = course['courseName']
-            if course_name not in clean_data[faculty_name]:
-                clean_data[faculty_name].append(course_name)
-
-    return dict(clean_data)
+from utils.json_utils import save_to_json
+from utils.output_format_utils import format_faculty_course_names, format_faculty_course_ids
 
 def main():
     # Set your test configuration
@@ -54,10 +29,17 @@ def main():
     from distribution.fitness import fitness
     best_individual = max(final_population, key=lambda ind: fitness(ind, faculties, courses))
     
-    # Output preprocessing
+    # Name format output
     faculty_info = {f["facultyId"]: f["name"] for f in faculties}
-    output = clean_faculty_courses(best_individual, faculty_info)
-    save_to_json(output, "workload-distribution-output.json")
+
+    name_format_distribution = format_faculty_course_names(best_individual, faculty_info)
+    save_to_json(name_format_distribution, "outputs/workload-distribution[name-format].json")
+
+    # Output required for schedulling algorithm
+    id_format_distribution = format_faculty_course_ids(best_individual)
+    save_to_json(id_format_distribution, "outputs/workload-distribution[id-format].json")
+
+
 
 if __name__ == "__main__":
     main()
