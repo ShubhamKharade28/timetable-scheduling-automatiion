@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "generated_at": "2024-06-20T14:30:00Z",
+    "department": "Information Technology"
+  },
+  "days": [
+    {
+      "day": "Monday",
+      "slots": [
+        {
+          "time": "9:00-10:00",
+          "sessions": [
+            {
+              "sem": 3,
+              "course_id": "BTITC301",
+              "name": "Eng Math III",
+              "faculty_id": "FAC002",
+              "faculty_name": "Dr. Jadhav",
+              "room": "LH101"
+            },
+            {
+              "sem": 5,
+              "course_id": "BTITOOP304",
+              "name": "OOP Lab",
+              "faculty_id": "FAC003",
+              "faculty_name": "Prof. Patil",
+              "room": "CL205",
+              "batch": "A"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}

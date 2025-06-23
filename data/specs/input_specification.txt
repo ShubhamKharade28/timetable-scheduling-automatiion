@@ -1,0 +1,45 @@
+============================================
+WORKLOAD DISTRIBUTION & TIMETABLE SCHEDULING
+         Input Data Specification
+============================================
+
+1. COURSE DATA STRUCTURE
+------------------------
+Required fields for each course:
+{
+  "id": "BTITC301",               # Unique identifier (string)
+  "name": "Engineering Mathematics III",
+  "semester": 3,                  # 3, 5, or 7 (integer)
+  "type": "lecture",              # "lecture"/"LAB"/"Tutorial"/"Others"
+  "sessions": 3,                  # Sessions per week (integer)
+  "batches": 1,                   # 1=combined, >1=parallel batches (integer)
+  "elective": null                # null=core, "EM2"=elective group (string|null)
+}
+
+2. FACULTY DATA STRUCTURE
+------------------------
+Required fields for each faculty member:
+{
+  "id": "FAC001",                 # Unique identifier (string)
+  "name": "Dr. S. M. Jadhav",
+  "workload_factor": 1,           # 1=Highest priority (HoD), 4=Lowest (Ad-hoc)
+  "preferred_courses": ["BTITC505"], # Course IDs (array of strings)
+  "preferred_timeslot": "morning" # "morning"/"afternoon"/"none"
+}
+
+3. WORKLOAD FACTOR TIERS
+------------------------
+| Value | Role          | Purpose                             |
+|-------|---------------|-------------------------------------|
+| 1     | HoD           | Highest priority, minimal teaching  |
+| 2     | Senior Prof   | Balanced teaching/research          |
+| 3     | Junior Prof   | Higher teaching load                |
+| 4     | Ad-hoc        | Lowest priority, max teaching load  |
+
+4. VALIDATION RULES
+-------------------
+• Course IDs must be unique
+• workload_factor ∈ {1, 2, 3, 4}
+• batches ≥ 1
+• elective ∈ {null, "EM1", "EM2", ...}
+• preferred_timeslot ∈ {"morning", "afternoon", "none"}
