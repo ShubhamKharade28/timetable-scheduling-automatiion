@@ -1,0 +1,344 @@
+[
+  {
+    "id": "BTITC301",
+    "name": "Engineering Mathematics III",
+    "semester": 3,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC302",
+    "name": "Computer Organization and Architecture",
+    "semester": 3,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITOOP303",
+    "name": "Object Oriented Programming with C++",
+    "semester": 3,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITOOP304",
+    "name": "Object Oriented Programming with C++",
+    "semester": 3,
+    "type": "LAB",
+    "sessions": 1,
+    "batches": 3,
+    "elective": null
+  },
+  {
+    "id": "BTITC305",
+    "name": "Discrete Mathematics",
+    "semester": 3,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC306",
+    "name": "Management Information System",
+    "semester": 3,
+    "type": "lecture",
+    "sessions": 2,
+    "batches": 1,
+    "elective": "EM1"
+  },
+  {
+    "id": "BTITC307",
+    "name": "Financial Statement Analysis and Reporting",
+    "semester": 3,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM1"
+  },
+  {
+    "id": "BTITC308",
+    "name": "Universal Human Values II",
+    "semester": 3,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM1"
+  },
+  {
+    "id": "BTITC309",
+    "name": "Life of Chhatrapati Shivaji Maharaj",
+    "semester": 3,
+    "type": "lecture",
+    "sessions": 1,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC310",
+    "name": "Community Engagement Project / Field Project",
+    "semester": 3,
+    "type": "Others",
+    "sessions": 0,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC501",
+    "name": "Software Engineering",
+    "semester": 5,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC502",
+    "name": "Software Engineering Tutorial",
+    "semester": 5,
+    "type": "Tutorial",
+    "sessions": 4,
+    "batches": 4,
+    "elective": null
+  },
+  {
+    "id": "BTITC503",
+    "name": "Computer Networks and Internetworking Protocols",
+    "semester": 5,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC504",
+    "name": "Computer Networks and Internetworking Protocols",
+    "semester": 5,
+    "type": "Tutorial",
+    "sessions": 4,
+    "batches": 4,
+    "elective": null
+  },
+  {
+    "id": "BTITC505",
+    "name": "Data Visualization",
+    "semester": 5,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM2"
+  },
+  {
+    "id": "BTITC506",
+    "name": "Network Management",
+    "semester": 5,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM2"
+  },
+  {
+    "id": "BTITC507",
+    "name": "Programming in Java",
+    "semester": 5,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM3"
+  },
+  {
+    "id": "BTITC508",
+    "name": "Human Computer Interaction",
+    "semester": 5,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM3"
+  },
+  {
+    "id": "BTITC509",
+    "name": "Computer Networks and Internetworking Protocols Lab",
+    "semester": 5,
+    "type": "LAB",
+    "sessions": 8,
+    "batches": 4,
+    "elective": null
+  },
+  {
+    "id": "BTITC510",
+    "name": "Software Engineering Lab",
+    "semester": 5,
+    "type": "LAB",
+    "sessions": 8,
+    "batches": 4,
+    "elective": null
+  },
+  {
+    "id": "BTITC511",
+    "name": "Network Management Lab",
+    "semester": 5,
+    "type": "LAB",
+    "sessions": 4,
+    "batches": 2,
+    "elective": null
+  },
+  {
+    "id": "BTITC512",
+    "name": "Data Visualization Lab",
+    "semester": 5,
+    "type": "LAB",
+    "sessions": 4,
+    "batches": 2,
+    "elective": null
+  },
+  {
+    "id": "BTITC513",
+    "name": "Mini Project I",
+    "semester": 5,
+    "type": "Others",
+    "sessions": 4,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC701",
+    "name": "Cloud Computing and Storage Management",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 2,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC702",
+    "name": "Artificial Intelligence",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": null
+  },
+  {
+    "id": "BTITC703",
+    "name": "Pattern Recognition",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM4"
+  },
+  {
+    "id": "BTITC704",
+    "name": "Soft Computing",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM4"
+  },
+  {
+    "id": "BTITC705",
+    "name": "Financial Accounting",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM5"
+  },
+  {
+    "id": "BTITC706",
+    "name": "Machine Learning",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM5"
+  },
+  {
+    "id": "BTITC707",
+    "name": "Deep Learning",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM5"
+  },
+  {
+    "id": "BTITC708",
+    "name": "Distributed Computing",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM6"
+  },
+  {
+    "id": "BTITC709",
+    "name": "Natural Language Processing",
+    "semester": 7,
+    "type": "lecture",
+    "sessions": 3,
+    "batches": 1,
+    "elective": "EM6"
+  },
+  {
+    "id": "BTITC710",
+    "name": "Pattern Recognition Lab",
+    "semester": 7,
+    "type": "LAB",
+    "sessions": 2,
+    "batches": 1,
+    "elective": "EM7"
+  },
+  {
+    "id": "BTITC711",
+    "name": "Soft Computing Lab",
+    "semester": 7,
+    "type": "LAB",
+    "sessions": 6,
+    "batches": 3,
+    "elective": "EM7"
+  },
+  {
+    "id": "BTITC712",
+    "name": "Distributed Computing Lab",
+    "semester": 7,
+    "type": "LAB",
+    "sessions": 2,
+    "batches": 1,
+    "elective": "EM8"
+  },
+  {
+    "id": "BTITC713",
+    "name": "Natural Language Processing Lab",
+    "semester": 7,
+    "type": "LAB",
+    "sessions": 6,
+    "batches": 3,
+    "elective": "EM8"
+  },
+  {
+    "id": "BTITC714",
+    "name": "Project Phase I",
+    "semester": 7,
+    "type": "Others",
+    "sessions": 4,
+    "batches": 4,
+    "elective": null
+  },
+  {
+    "id": "BTITC715",
+    "name": "Industrial Training III Evaluation",
+    "semester": 7,
+    "type": "Others",
+    "sessions": 4,
+    "batches": 4,
+    "elective": null
+  }
+]
