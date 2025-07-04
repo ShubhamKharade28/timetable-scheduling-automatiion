@@ -1,0 +1,79 @@
+[
+  {
+    "id": "FAC001",
+    "name": "Dr. S. M. Jadhav",
+    "workload_factor": 1,
+    "preferred_courses": ["BTITC505", "BTITC512"],
+    "preferred_timeslot": "morning"
+  },
+  {
+    "id": "FAC002",
+    "name": "Dr. S. R. Sutar",
+    "workload_factor": 2,
+    "preferred_courses": ["BTITOOP303", "BTITC305", "BTITC503"],
+    "preferred_timeslot": "none"
+  },
+  {
+    "id": "FAC003",
+    "name": "Dr. V. J. Kadam",
+    "workload_factor": 2,
+    "preferred_courses": ["BTITC703", "BTITC704", "BTITC710", "BTITC711", "BTITC501", "BTITC502", "BTITC510", "BTITC706", "BTITC707", "BTITC306"],
+    "preferred_timeslot": "none"
+  },
+  {
+    "id": "FAC004",
+    "name": "Dr. A. R. Babhulgaonkar",
+    "workload_factor": 2,
+    "preferred_courses": ["BTITC705", "BTITC307", "BTITC709", "BTITC713", "BTITC706", "BTITC707"],
+    "preferred_timeslot": "afternoon"
+  },
+  {
+    "id": "FAC005",
+    "name": "Prof. S.V. Bharad",
+    "workload_factor": 3,
+    "preferred_courses": ["BTITC302", "BTITC503", "BTITC509", "BTITC709", "BTITC713", "BTITC704", "BTITC711", "BTITC505", "BTITC512", "BTITC706"],
+    "preferred_timeslot": "afternoon"
+  },
+  {
+    "id": "FAC006",
+    "name": "Prof. S. S. Barphe",
+    "workload_factor": 3,
+    "preferred_courses": ["BTITOOP303", "BTITOOP304", "BTITC713"],
+    "preferred_timeslot": "none"
+  },
+  {
+    "id": "FAC007",
+    "name": "Prof. S. R. Hivre",
+    "workload_factor": 3,
+    "preferred_courses": ["BTITC702", "BTITC305"],
+    "preferred_timeslot": "none"
+  },
+  {
+    "id": "FAC008",
+    "name": "Prof. E. G. Meshram",
+    "workload_factor": 3,
+    "preferred_courses": ["BTITC701", "BTITC506", "BTITC706", "BTITC302"],
+    "preferred_timeslot": "none"
+  },
+  {
+    "id": "FAC009",
+    "name": "Prof. P. P. Jadhav",
+    "workload_factor": 3,
+    "preferred_courses": ["BTITC302", "BTITC507", "BTITC512", "BTITC713"],
+    "preferred_timeslot": "none"
+  },
+  {
+    "id": "FAC010",
+    "name": "Prof. S. K. Thakur",
+    "workload_factor": 3,
+    "preferred_courses": ["BTITC508", "BTITC501", "BTITC510", "BTITC306"],
+    "preferred_timeslot": "none"
+  },
+  {
+    "id": "FAC011",
+    "name": "Prof. K. R. Korpe",
+    "workload_factor": 3,
+    "preferred_courses": ["BTITC309", "BTITC507", "BTITC706"],
+    "preferred_timeslot": "none"
+  }
+]
