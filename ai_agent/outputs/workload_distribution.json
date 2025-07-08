@@ -1,0 +1,421 @@
+{
+  "assignments": [
+    {
+      "course_id": "BTITC301",
+      "faculty_id": "FAC007"
+    },
+    {
+      "course_id": "BTITC302",
+      "faculty_id": "FAC008"
+    },
+    {
+      "course_id": "BTITOOP303",
+      "faculty_id": "FAC002"
+    },
+    {
+      "course_id": "BTITOOP304",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC006"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC006"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC006"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC305",
+      "faculty_id": "FAC002"
+    },
+    {
+      "course_id": "BTITC306",
+      "faculty_id": "FAC003"
+    },
+    {
+      "course_id": "BTITC307",
+      "faculty_id": "FAC004"
+    },
+    {
+      "course_id": "BTITC308",
+      "faculty_id": "FAC011"
+    },
+    {
+      "course_id": "BTITC309",
+      "faculty_id": "FAC011"
+    },
+    {
+      "course_id": "BTITC310",
+      "faculty_id": "FAC001"
+    },
+    {
+      "course_id": "BTITC501",
+      "faculty_id": "FAC003"
+    },
+    {
+      "course_id": "BTITC502",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC003"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC003"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC003"
+        },
+        {
+          "batch": 4,
+          "faculty_id": "FAC003"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC503",
+      "faculty_id": "FAC002"
+    },
+    {
+      "course_id": "BTITC504",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC002"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC002"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC002"
+        },
+        {
+          "batch": 4,
+          "faculty_id": "FAC002"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC505",
+      "faculty_id": "FAC001"
+    },
+    {
+      "course_id": "BTITC506",
+      "faculty_id": "FAC008"
+    },
+    {
+      "course_id": "BTITC507",
+      "faculty_id": "FAC011"
+    },
+    {
+      "course_id": "BTITC508",
+      "faculty_id": "FAC010"
+    },
+    {
+      "course_id": "BTITC509",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC005"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC005"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC005"
+        },
+        {
+          "batch": 4,
+          "faculty_id": "FAC005"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC510",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC010"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC010"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC010"
+        },
+        {
+          "batch": 4,
+          "faculty_id": "FAC010"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC511",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC008"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC008"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC512",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC001"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC001"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC513",
+      "faculty_id": "FAC009"
+    },
+    {
+      "course_id": "BTITC701",
+      "faculty_id": "FAC008"
+    },
+    {
+      "course_id": "BTITC702",
+      "faculty_id": "FAC007"
+    },
+    {
+      "course_id": "BTITC703",
+      "faculty_id": "FAC003"
+    },
+    {
+      "course_id": "BTITC704",
+      "faculty_id": "FAC005"
+    },
+    {
+      "course_id": "BTITC705",
+      "faculty_id": "FAC004"
+    },
+    {
+      "course_id": "BTITC706",
+      "faculty_id": "FAC005"
+    },
+    {
+      "course_id": "BTITC707",
+      "faculty_id": "FAC003"
+    },
+    {
+      "course_id": "BTITC708",
+      "faculty_id": "FAC009"
+    },
+    {
+      "course_id": "BTITC709",
+      "faculty_id": "FAC004"
+    },
+    {
+      "course_id": "BTITC710",
+      "faculty_id": "FAC003"
+    },
+    {
+      "course_id": "BTITC711",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC005"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC005"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC005"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC712",
+      "faculty_id": "FAC009"
+    },
+    {
+      "course_id": "BTITC713",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC004"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC004"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC004"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC714",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC010"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC010"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC010"
+        },
+        {
+          "batch": 4,
+          "faculty_id": "FAC010"
+        }
+      ]
+    },
+    {
+      "course_id": "BTITC715",
+      "batch_assignments": [
+        {
+          "batch": 1,
+          "faculty_id": "FAC007"
+        },
+        {
+          "batch": 2,
+          "faculty_id": "FAC007"
+        },
+        {
+          "batch": 3,
+          "faculty_id": "FAC007"
+        },
+        {
+          "batch": 4,
+          "faculty_id": "FAC007"
+        }
+      ]
+    }
+  ],
+  "faculty_summary": [
+    {
+      "faculty_id": "FAC001",
+      "assigned_courses": [
+        "BTITC310",
+        "BTITC505",
+        "BTITC512"
+      ],
+      "total_workload": 7
+    },
+    {
+      "faculty_id": "FAC002",
+      "assigned_courses": [
+        "BTITOOP303",
+        "BTITC305",
+        "BTITC503",
+        "BTITC504"
+      ],
+      "total_workload": 12
+    },
+    {
+      "faculty_id": "FAC003",
+      "assigned_courses": [
+        "BTITC306",
+        "BTITC501",
+        "BTITC502",
+        "BTITC703",
+        "BTITC707"
+      ],
+      "total_workload": 16
+    },
+    {
+      "faculty_id": "FAC004",
+      "assigned_courses": [
+        "BTITC307",
+        "BTITC705",
+        "BTITC709",
+        "BTITC713"
+      ],
+      "total_workload": 12
+    },
+    {
+      "faculty_id": "FAC005",
+      "assigned_courses": [
+        "BTITC509",
+        "BTITC704",
+        "BTITC706",
+        "BTITC711"
+      ],
+      "total_workload": 16
+    },
+    {
+      "faculty_id": "FAC006",
+      "assigned_courses": [
+        "BTITOOP304"
+      ],
+      "total_workload": 6
+    },
+    {
+      "faculty_id": "FAC007",
+      "assigned_courses": [
+        "BTITC301",
+        "BTITC702",
+        "BTITC715"
+      ],
+      "total_workload": 10
+    },
+    {
+      "faculty_id": "FAC008",
+      "assigned_courses": [
+        "BTITC302",
+        "BTITC506",
+        "BTITC701",
+        "BTITC511"
+      ],
+      "total_workload": 10
+    },
+    {
+      "faculty_id": "FAC009",
+      "assigned_courses": [
+        "BTITC513",
+        "BTITC708",
+        "BTITC712"
+      ],
+      "total_workload": 9
+    },
+    {
+      "faculty_id": "FAC010",
+      "assigned_courses": [
+        "BTITC508",
+        "BTITC510",
+        "BTITC714"
+      ],
+      "total_workload": 14
+    },
+    {
+      "faculty_id": "FAC011",
+      "assigned_courses": [
+        "BTITC308",
+        "BTITC309",
+        "BTITC507",
+        "BTITC706"
+      ],
+      "total_workload": 8
+    }
+  ]
+}

@@ -7,7 +7,7 @@ const googleApiKey = "AIzaSyANSSJpRrgB2V30cfT16fIfyCTjci9F-rc";
 const model = new ChatGoogleGenerativeAI({
     model: googleModelName,
     apiKey: googleApiKey,
-    temperature: 0.3, // focused, factual <----> creative, diversed [0,1]
+    temperature: 0.1, // focused, factual <----> creative, diversed [0,1]
     maxRetries: 2,
 });
 
